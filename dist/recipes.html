@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+  <link href="../src/my-style.css" rel="stylesheet">
+  <title>Recipes - Kent's Kitchen | Filipino Recipe Ideas</title>
+  <link rel="shortcut icon" type="x-icon" href="./pics/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="bg-gradient-to-b from-yellow-200 to-yellow-400 via-orange-300 h-full w-full">
+  <header class="bg-orange-500 w-full">
+    <nav class="font-bold flex justify-between items-center w-[100%]">
+      <div class="p-3">
+        <a href="index.html"><img class="h-10 rounded-lg inline" id="k-logo" src="./pics/logo.png" alt=""></a>
+        <p class="inline text-xl" id="web-name">Kent's Kitchen</p>
+      </div>
+      <div class="cursor-pointer md:hidden">
+        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer p-3"></ion-icon>
+      </div>
+      <div
+        class="nav-links duration-200 md:static absolute bg-orange-500 md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+        <ul class="flex md:flex-row flex-col md:items-center md:gap-0 gap-6">
+          <a href="index.html">
+            <li class="flex md:px-5 md:py-4 hover:md:bg-yellow-500"><img id="home-icon" src="./pics/home-icon.png"
+                alt="">Home</li>
+          </a>
+          <a href="recipes.html" id="isActive">
+            <li class="md:px-5 md:py-4 hover:md:bg-yellow-500"><img id="recipe-icon" src="./pics/recipe-icon.png"
+                alt="">Recipes</li>
+          </a>
+          <a href="about.html">
+            <li class="md:px-5 md:py-4 hover:md:bg-yellow-500"><img id="about-icon" src="./pics/about-icon.png"
+                alt="">About</li>
+          </a>
+          <a href="login.html">
+            <li class="md:px-5 md:py-4 hover:md:bg-yellow-500"><img id="recipe-icon" src="./pics/login-icon.png"
+                alt="">Login</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="red-line"></div>
+
+  <h1 class="bg-yellow-200 font-bold text-center md:text-7xl text-5xl py-16 p-5">5 Recipe Ideas</h1>
+  <div class="m-auto border-black w-11/12 border-4"></div>
+  <div class="flex justify-center bg-gradient-to-b from-yellow-200 to-yellow-400 via-orange-300">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 m-3 md:mt-24 mt-9 overflow-x-hidden">
+      <a href="pinakbet.html">
+        <div
+          class="group relative items-center justify-center overflow-hidden hover:shadow-xl hover:shadow-black/30 transition-shadow">
+          <div class="md:h-80 md:w-72">
+            <img
+              class="md:h-full md:w-full w-56 h-40 group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
+              id="pinakbet" src="./pics/rec-2.png" alt="">
+          </div>
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-transparent via transparent to-yellow-200 group-hover:from-yellow-100 group-hover:via-black/20">
+          </div>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[71%] group-hover:translate-y-0 transition-all">
+            <h1 class="md:text-3xl text-xl font-bold text-white">Pinakbet</h1>
+            <p
+              class="md:text-lg text-xs italic mb-3 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Pinakbet is a Filipino vegetable stew made with a variety of vegetables and flavored with bagoong
+              (fermented fish sauce) and other seasonings.</p>
+          </div>
+        </div>
+      </a>
+      <a href="pork-sisig.html">
+        <div
+          class="group relative items-center justify-center overflow-hidden hover:shadow-xl hover:shadow-black/30 transition-shadow">
+          <div class="md:h-80 md:w-72">
+            <img
+              class="md:h-full md:w-full w-56 h-40 group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
+              id="sisig" src="./pics/rec-1.png" alt="">
+          </div>
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-transparent via transparent to-yellow-200 group-hover:from-yellow-100 group-hover:via-black/20">
+          </div>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[75%] group-hover:translate-y-0 transition-all">
+            <h1 class="md:text-3xl text-xl font-bold text-white">Pork Sisig</h1>
+            <p
+              class="md:text-lg text-xs italic mb-3 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Pork sisig is a popular Filipino dish made with chopped pig's face and ears, seasoned with soy sauce,
+              vinegar, and various spices, then served on a sizzling plate.</p>
+          </div>
+        </div>
+      </a>
+      <a href="beef-pares.html">
+        <div
+          class="group relative items-center justify-center overflow-hidden hover:shadow-xl hover:shadow-black/30 transition-shadow">
+          <div class="md:h-80 md:w-72">
+            <img
+              class="md:h-full md:w-full w-56 h-40 group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
+              id="beef" src="./pics/rec-3.png" alt="">
+          </div>
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-transparent via transparent to-yellow-200 group-hover:from-yellow-100 group-hover:via-black/20">
+          </div>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[70%] group-hover:translate-y-0 transition-all">
+            <h1 class="md:text-3xl text-xl font-bold text-white">Beef Pares</h1>
+            <p
+              class="md:text-lg text-xs italic mb-3 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Beef pares is a Filipino dish made with braised beef brisket, cooked in a savory-sweet soy sauce-based
+              broth, and served with garlic fried rice.</p>
+          </div>
+        </div>
+      </a>
+      <a href="pancit.html">
+        <div
+          class="group relative items-center justify-center overflow-hidden hover:shadow-xl hover:shadow-black/30 transition-shadow">
+          <div class="md:h-80 md:w-72">
+            <img
+              class="md:h-full md:w-full w-56 h-40 group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
+              id="pancit" src="./pics/rec-4.png" alt="">
+          </div>
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-transparent via transparent to-yellow-200 group-hover:from-yellow-100 group-hover:via-black/20">
+          </div>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[83%] group-hover:translate-y-0 transition-all">
+            <h1 class="md:text-3xl text-xl font-bold text-white">Pancit Guisado</h1>
+            <p
+              class="md:text-lg text-xs italic mb-3 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Pancit guisado is a Filipino stir-fried noodle dish made with bihon (thin rice noodles) or canton (thick
+              egg noodles), mixed with vegetables, meat, and often seafood, seasoned with soy sauce and other spices.
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="adobong-manok.html">
+        <div
+          class="group relative items-center justify-center overflow-hidden hover:shadow-xl hover:shadow-black/30 transition-shadow">
+          <div class="md:h-80 md:w-72">
+            <img
+              class="md:h-full md:w-full w-56 h-40 group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
+              id="adobo" src="./pics/rec-5.png" alt="">
+          </div>
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-transparent via transparent to-yellow-200 group-hover:from-yellow-100 group-hover:via-black/20">
+          </div>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[75%] group-hover:translate-y-0 transition-all">
+            <h1 class="md:text-3xl text-xl font-bold text-white">Adobong Manok</h1>
+            <p
+              class="md:text-lg text-xs italic mb-3 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Adobong manok is a classic Filipino dish made with chicken marinated and simmered in a mixture of vinegar,
+              soy sauce, garlic, and other seasonings, resulting in a tangy and savory flavor.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+
+  <script>
+    const navLinks = document.querySelector('.nav-links')
+
+    function onToggleMenu(e) {
+      e.name = e.name === 'menu' ? 'close' : 'menu'
+      navLinks.classList.toggle('top-[8%]')
+    }
+  </script>
+
+</body>
+
+</html>
+
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->

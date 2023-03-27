@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+  <link href="../src/my-style.css" rel="stylesheet">
+  <title>About - Kent's Kitchen | Filipino Recipe Ideas</title>
+  <link rel="shortcut icon" type="x-icon" href="./pics/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body id="about-bg">
+  <header class="bg-orange-500 w-full">
+    <nav class="font-bold flex justify-between items-center w-[100%]">
+      <div class="p-3">
+        <a href="index.html"><img class="h-10 rounded-lg inline" id="k-logo" src="./pics/logo.png" alt=""></a>
+        <p class="inline text-xl" id="web-name">Kent's Kitchen</p>
+      </div>
+      <div class="cursor-pointer md:hidden">
+        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer p-3"></ion-icon>
+      </div>
+      <div
+        class="nav-links duration-200 md:static absolute bg-orange-500 md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+        <ul class="flex md:flex-row flex-col md:items-center md:gap-0 gap-6">
+          <a href="index.html">
+            <li class="md:px-5 md:py-4 hover:md:bg-yellow-500"><img id="home-icon" src="./pics/home-icon.png"
+                alt="">Home</li>
+          </a>
+          <a href="recipes.html">
+            <li class="md:px-5 md:py-4 hover:md:bg-yellow-500"><img id="recipe-icon" src="./pics/recipe-icon.png"
+                alt="">Recipes</li>
+          </a>
+          <a href="about.html" id="isActive">
+            <li class="md:px-5 md:py-4 hover:md:bg-yellow-500"><img id="about-icon" src="./pics/about-icon.png"
+                alt="">About</li>
+          </a>
+          <a href="login.html">
+            <li class="md:px-5 md:py-4 hover:md:bg-yellow-500"><img id="recipe-icon" src="./pics/login-icon.png"
+                alt="">Login</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="red-line"></div>
+  <h1 class="md:text-7xl text-5xl md:mt-20 mt-14 md:text-center text-center" id="atw">About This Website!</h1>
+  <div class="mx-5 p-5 md:w-4/5 bg-slate-200 bg-opacity-80 md:mt-7 mt-7 md:m-auto">
+    <p class="md:text-xl text-justify duration-500">Hello, and welcome to <span class="text-red-500 font-bold">Kent’s
+        Kitchen</span> recipe website! As a passionate home cook and food
+      enthusiast, I created this platform as a space to share my love of cooking and all things culinary with you.
+      Whether you're a seasoned pro or a beginner in the kitchen, I hope to inspire you to get creative with
+      your cooking and try out new recipes.
+      <br><br>
+      On this website, you'll find a wide range of recipes to suit all tastes and preferences.
+      From quick and easy weeknight meals to more complex dishes for special occasions, I've got you covered.
+      I also understand the importance of dietary restrictions, so I've included plenty of options for those
+      following a vegetarian, vegan, or gluten-free diet. So, take a look around, find a recipe that catches
+      your eye, and let's get cooking!
+    </p>
+    <footer class="text-center md:mt-6 mt-10">
+      <p class="font-bold">Follow us on:
+        <a href="https://www.facebook.com/profile.php?id=100091118010053" target="_blank"><img id="logo"
+            src="./pics/fb-logo.png" alt=""></a>
+        <a href="https://www.instagram.com/kents_kitchen24/" target="_blank"><img id="logo" src="./pics/ig-logo.png"
+            alt=""></a>
+        <a href="https://twitter.com/Kents_Kitchen" target="_blank"><img id="logo" src="./pics/twt-logo.png" alt=""></a>
+      </p>
+    </footer>
+  </div>
+
+
+
+  <script>
+    const navLinks = document.querySelector('.nav-links')
+
+    function onToggleMenu(e) {
+      e.name = e.name === 'menu' ? 'close' : 'menu'
+      navLinks.classList.toggle('top-[8%]')
+    }
+  </script>
+
+</body>
+
+</html>
+
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->

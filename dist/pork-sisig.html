@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+  <link href="../src/my-style.css" rel="stylesheet">
+  <title>Recipes - Pork Sisig | Kent's Kitchen</title>
+  <link rel="shortcut icon" type="x-icon" href="./pics/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="bg-gradient-to-b from-yellow-200 to-yellow-400 via-orange-300 h-full w-full">
+  <header class="bg-orange-500 w-full">
+    <nav class="font-bold flex justify-between items-center w-[100%]">
+      <div class="p-3">
+        <a href="index.html"><img class="h-10 rounded-lg inline" id="k-logo" src="./pics/logo.png" alt=""></a>
+        <p class="inline text-xl" id="web-name">Kent's Kitchen</p>
+      </div>
+      <div class="cursor-pointer md:hidden">
+        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer p-3"></ion-icon>
+      </div>
+      <div
+        class="nav-links duration-200 md:static absolute bg-orange-500 md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+        <ul class="flex md:flex-row flex-col md:items-center md:gap-0 gap-6">
+          <a href="index.html">
+            <li class="md:px-5 md:py-4 hover:md:bg-yellow-500"><img id="home-icon" src="./pics/home-icon.png"
+                alt="">Home</li>
+          </a>
+          <a href="recipes.html" id="isActive">
+            <li class="md:px-5 md:py-4 hover:md:bg-yellow-500"><img id="recipe-icon" src="./pics/recipe-icon.png"
+                alt="">Recipes</li>
+          </a>
+          <a href="about.html">
+            <li class="md:px-5 md:py-4 hover:md:bg-yellow-500"><img id="about-icon" src="./pics/about-icon.png"
+                alt="">About</li>
+          </a>
+          <a href="login.html">
+            <li class="md:px-5 md:py-4 hover:md:bg-yellow-500"><img id="recipe-icon" src="./pics/login-icon.png"
+                alt="">Login</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="red-line"></div>
+
+  <div class="p-5 bg-gradient-to-b from-yellow-200 to-yellow-400 via-orange-300">
+    <h1 class="md:text-5xl text-3xl duration-300 font-bold text-black">Pork Sisig</h1>
+    <div class="md:flex">
+      <div class="p-5 md:w-4/5 bg-slate-200 bg-opacity-80 md:mt-7 mt-4 md:m-auto">
+        <img class="md:w-56 md:h-40 w-40 h-32 mb-4 m-auto" src="./pics/sisig.jpg">
+        <p class="md:text-xl text-justify duration-500">
+          Pork Sisig is a popular Filipino dish made from chopped pig's head and liver, seasoned with calamansi, onions,
+          and chili peppers.
+          The dish originated in Pampanga, a province in the Philippines known for its culinary delights.
+          ork Sisig is often served sizzling on a hot plate, and is typically enjoyed as a flavorful appetizer or paired
+          with rice as a main course.
+        </p>
+      </div>
+    </div>
+
+    <h1 class="mt-5 md:text-5xl text-3xl duration-300 font-bold text-black">Ingredients</h1>
+    <div class="p-5 md:w-4/5 bg-slate-200 bg-opacity-80 md:mt-7 mt-7 md:m-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <ul class="md:text-xl duration-500 list-disc px-5">
+          <li>1 lb pork belly, boiled and grilled or broiled until crispy</li>
+          <li>1 large onion, chopped</li>
+          <li>3 cloves garlic, minced</li>
+          <li>3-4 pieces chili peppers, chopped (or to taste)</li>
+          <li>2 tablespoons soy sauce</li>
+          <li>1 tablespoon vinegar (preferably cane vinegar)</li>
+        </ul>
+        <ul class="md:text-xl duration-500 list-disc px-5 -mt-5 md:mt-0">
+          <li>1/2 cup pig's liver, boiled and chopped into small pieces</li>
+          <li>1 tablespoon calamansi juice (or lemon or lime juice)</li>
+          <li>1/4 teaspoon black pepper</li>
+          <li>2 tablespoons cooking oil</li>
+          <li>Salt to taste</li>
+          <li>Green onions, chopped</li>
+        </ul>
+      </div>
+    </div>
+
+    <h1 class="mt-5 md:text-5xl text-3xl duration-300 font-bold text-black">Procedure</h1>
+    <div class="p-5 md:w-4/5 bg-slate-200 bg-opacity-80 md:mt-7 mt-7 md:m-auto">
+      <ul class="md:text-xl text-justify duration-500 list-decimal p-5 -mt-5 md:-mt-5">
+        <li>In a large bowl, combine the chopped pork belly and liver.</li>
+        <li>In a separate bowl, mix together the soy sauce, vinegar, calamansi juice, and black pepper.</li>
+        <li>In a pan over medium heat, add the cooking oil and sauté the garlic and onion until the onion becomes
+          translucent.</li>
+        <li>Add the chopped chili peppers and continue to sauté for 1-2 minutes.</li>
+        <li>Pour in the soy sauce mixture and stir well.</li>
+        <li>Add the chopped pork belly and liver, and stir until the ingredients are well coated with the sauce.</li>
+        <li>Cook for an additional 2-3 minutes, stirring occasionally.</li>
+        <li>If desired, top with a fried egg and chopped green onions before serving.</li>
+      </ul>
+      <br>
+      <p class="text-center text-xs md:text-sm">Note: Serve hot on a sizzling plate and enjoy!</p>
+    </div>
+  </div>
+
+  <script>
+    const navLinks = document.querySelector('.nav-links')
+
+    function onToggleMenu(e) {
+      e.name = e.name === 'menu' ? 'close' : 'menu'
+      navLinks.classList.toggle('top-[8%]')
+    }
+  </script>
+
+</body>
+
+</html>

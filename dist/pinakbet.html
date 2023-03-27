@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+  <link href="../src/my-style.css" rel="stylesheet">
+  <title>Recipes - Pinakbet | Kent's Kitchen</title>
+  <link rel="shortcut icon" type="x-icon" href="./pics/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="bg-gradient-to-b from-yellow-200 to-yellow-400 via-orange-300 h-full w-full">
+  <header class="bg-orange-500 w-full">
+    <nav class="font-bold flex justify-between items-center w-[100%]">
+      <div class="p-3">
+        <a href="index.html"><img class="h-10 rounded-lg inline" id="k-logo" src="./pics/logo.png" alt=""></a>
+        <p class="inline text-xl" id="web-name">Kent's Kitchen</p>
+      </div>
+      <div class="cursor-pointer md:hidden">
+        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer p-3"></ion-icon>
+      </div>
+      <div
+        class="nav-links duration-200 md:static absolute bg-orange-500 md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+        <ul class="flex md:flex-row flex-col md:items-center md:gap-0 gap-6">
+          <a href="index.html">
+            <li class="md:px-5 md:py-4 hover:md:bg-yellow-500"><img id="home-icon" src="./pics/home-icon.png"
+                alt="">Home
+            </li>
+          </a>
+          <a href="recipes.html" id="isActive">
+            <li class="md:px-5 md:py-4 hover:md:bg-yellow-500"><img id="recipe-icon" src="./pics/recipe-icon.png"
+                alt="">Recipes</li>
+          </a>
+          <a href="about.html">
+            <li class="md:px-5 md:py-4 hover:md:bg-yellow-500"><img id="about-icon" src="./pics/about-icon.png"
+                alt="">About</li>
+          </a>
+          <a href="login.html">
+            <li class="md:px-5 md:py-4 hover:md:bg-yellow-500"><img id="recipe-icon" src="./pics/login-icon.png"
+                alt="">Login</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="red-line"></div>
+
+  <div class="p-5 bg-gradient-to-b from-yellow-200 to-yellow-400 via-orange-300">
+    <h1 class="md:text-5xl text-3xl duration-300 font-bold text-black">Pinakbet</h1>
+    <div class="md:flex">
+      <div class="p-5 md:w-4/5 bg-slate-200 bg-opacity-80 md:mt-7 mt-4 md:m-auto">
+        <img class="md:w-56 md:h-40 w-40 h-32 mb-4 m-auto" src="./pics/pinakbet.png">
+        <p class="md:text-xl text-justify duration-500">
+          Pinakbet is a popular vegetable dish in the Philippines that originated in the northern regions of the
+          country.
+          It typically includes a variety of vegetables such as bitter melon, eggplant, okra, squash, and string beans,
+          cooked in a shrimp paste and tomato sauce. Pinakbet is often served with rice and is a nutritious and
+          flavorful meal option.
+        </p>
+      </div>
+    </div>
+
+    <h1 class="mt-5 md:text-5xl text-3xl duration-300 font-bold text-black">Ingredients</h1>
+    <div class="p-5 md:w-4/5 bg-slate-200 bg-opacity-80 md:mt-7 mt-7 md:m-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <ul class="md:text-xl duration-500 list-disc px-5">
+          <li>1 cup sliced bitter melon (ampalaya)</li>
+          <li>1 cup sliced eggplant (talong)</li>
+          <li>1 cup sliced okra (okra)</li>
+          <li>1 cup cubed squash (kalabasa)</li>
+          <li>1 cup sliced string beans (sitaw)</li>
+          <li>2 medium tomatoes, chopped (kamatis)</li>
+        </ul>
+        <ul class="md:text-xl duration-500 list-disc px-5 -mt-5 md:mt-0">
+          <li>4 cloves garlic, minced (bawang)</li>
+          <li>1 medium onion, chopped (sibuyas)</li>
+          <li>1 thumb-sized piece of ginger, sliced (luya)</li>
+          <li>2 tbsp shrimp paste (bagoong)</li>
+          <li>2 cups water</li>
+          <li>2 tbsp cooking oil</li>
+        </ul>
+      </div>
+    </div>
+
+    <h1 class="mt-5 md:text-5xl text-3xl duration-300 font-bold text-black">Procedure</h1>
+    <div class="p-5 md:w-4/5 bg-slate-200 bg-opacity-80 md:mt-7 mt-7 md:m-auto">
+      <ul class="md:text-xl text-justify duration-500 list-decimal p-5 -mt-5 md:-mt-5">
+        <li>In a pot or wok, heat the cooking oil over medium heat. Add the garlic, onion, and ginger and sauté until
+          fragrant.</li>
+        <li>Add the shrimp paste and sauté for a few minutes until slightly browned</li>
+        <li>Add the tomatoes and cook until they become soft and mushy.</li>
+        <li>Add the cubed squash and enough water to cover it. Let it simmer for about 5 minutes.</li>
+        <li>Add the rest of the vegetables - bitter melon, eggplant, okra, and string beans. Mix well and simmer until
+          the vegetables are cooked, but not mushy. This usually takes about 10-15 minutes.</li>
+        <li>Season with salt or fish sauce (patis) to taste.</li>
+        <li>Serve hot with steamed rice.</li>
+      </ul>
+      <br>
+      <p class="text-center text-xs md:text-sm">Note: Some people like to add meat or fish to their Pinakbet. If you do,
+        you can add them after step 2 and cook until they are slightly browned before adding the tomatoes.
+        You can also adjust the amount of water depending on how soupy or dry you like your Pinakbet.</p>
+    </div>
+  </div>
+
+  <script>
+    const navLinks = document.querySelector('.nav-links')
+
+    function onToggleMenu(e) {
+      e.name = e.name === 'menu' ? 'close' : 'menu'
+      navLinks.classList.toggle('top-[8%]')
+    }
+  </script>
+
+</body>
+
+</html>

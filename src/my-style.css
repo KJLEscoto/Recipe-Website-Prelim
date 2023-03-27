@@ -1,0 +1,111 @@
+html {
+  height: 100%;
+}
+
+
+/* home */
+#home-bg {
+  height: 100vh;
+  background-image: url(../dist/pics/img-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#k-logo {
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+#k-logo:hover {
+  box-shadow: 3px 5px 10px rgb(37, 37, 37);
+}
+
+#web-name {
+  font-family: 'Satisfy', cursive;
+}
+
+#isActive,
+ul a li:hover {
+  color: white;
+}
+
+#isActive:hover {
+  color: black;
+}
+
+ul li a {
+  transition: .2s;
+}
+
+#home-icon,
+#recipe-icon,
+#about-icon,
+#login-icon {
+  width: 30px;
+  display: inline-block;
+  position: relative;
+  top: -3px;
+}
+
+#red-line {
+  height: 5px;
+  width: 100%;
+  background-color: rgb(255, 0, 0);
+}
+
+
+#font-quote {
+  font-family: 'Tilt Warp', cursive;
+}
+
+#font-title {
+  font-family: 'Signika', sans-serif;
+}
+
+
+/* about */
+#about-bg {
+  background-image: url(../dist/pics/img-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+#atw {
+  font-family: 'Tilt Warp', cursive;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  transition: .25s;
+}
+
+#logo {
+  width: 25px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#logo:hover {
+  box-shadow: 3px 5px 10px rgb(82, 76, 76);
+}
+
+
+/* login */
+#acc-log {
+  font-family: 'Tilt Warp', cursive;
+}
+
+
+/* recipe */
+
+
+
+/* footer */
+
+#foot-style {
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+}
